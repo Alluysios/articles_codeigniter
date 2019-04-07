@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('../img/cool-background.png');
+    background-size: cover;
+    font-family: 'EB Garamond', serif;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+
+.date {
+    font-size: 1rem;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+.item {
+    font-size: 1.1rem;
+}
+
+.items .item {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.log {
+    color: #fff !important;
+}
+
+.ccbtn {
+    padding: 0 !important;
+}
+
+.ui .button {
+    margin-top: .8rem;
+}
+
+.ui.checkbox {
+    margin-top: 1rem;
+    margin-bottom: .7rem;
+}
+
+.cctext {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #4183c4;
+}
+
+.modal-dialog {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.modal-body {
+    font-size: 1.2rem;
+}
+
+.bootbox-close-button {
+    display: none;
+}
+
+.grey-text {
+    color: grey !important;
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: 700;
+}
