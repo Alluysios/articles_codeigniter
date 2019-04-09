@@ -20,7 +20,7 @@
         </h4>
         <p><?php echo nl2br_except_pre($row->description) ?></p>
 
-        <a class="ui button blue" href="<?php echo base_url() ?>article/read">&larr; Go back</a>
+        <a class="ui button blue" href="<?php echo base_url() ?>article/read">&larr; Read More Articles</a>
     </div>
 <?php endforeach; ?>
 <?php endif; ?>
