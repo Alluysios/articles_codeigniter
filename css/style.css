@@ -88,3 +88,12 @@ label {
 .bold {
     font-weight: 700;
 }
+
+.home {
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.home > .column {
+    margin: 0 .5rem;
+}

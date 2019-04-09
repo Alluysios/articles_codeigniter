@@ -11,7 +11,7 @@ if($results) {
 }
 ?>
 <h1>Edit Article</h1>
-<?php echo form_open_multipart('crud/edit/'. $id); ?>
+<?php echo form_open_multipart('article/edit/'. $id); ?>
 <div class="ui form">
 	<div class="field">
 		<label for="title">Title</label>

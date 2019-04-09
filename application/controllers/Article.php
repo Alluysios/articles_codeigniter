@@ -95,7 +95,7 @@ class Article extends CI_Controller {
 
 		$this->form_validation->set_error_delimiters('<div class="ui error message">','</div>');
 		$this->form_validation->set_rules('title', 'title', 'required|min_length[4]');
-		$this->form_validation->set_rules('description', 'Description', 'required|min_length[20]|max_length[800]');
+		$this->form_validation->set_rules('description', 'Description', 'required|min_length[20]|max_length[99999]');
 
 		if($this->form_validation->run() == FALSE){ // validation not passed; either showing form for the first time, or showing validation errors
 			// load existing data

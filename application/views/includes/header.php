@@ -48,6 +48,9 @@
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
+                        <a href="<?php echo base_url()."auth/change_password" ?>" class="ui item log">Change Password</a>
+                        <a href="<?php echo base_url()."auth/change_email" ?>" class="ui item log">Change Email</a>
+                        <div class="divider"></div>
                         <a href="<?php echo base_url()."auth/logout" ?>" class="ui item log">Logout</a>
                     </div>
                 </div>
