@@ -93,13 +93,16 @@ class Article extends CI_Controller {
 		
 		$this->load->library('form_validation');
 
-		$this->form_validation->set_error_delimiters('<div class="ui error message">','</div>');
+		$this->form_validation->set_error_delimiters('<div class="ui red message">','</div>');
 		$this->form_validation->set_rules('title', 'title', 'required|min_length[4]');
 		$this->form_validation->set_rules('description', 'Description', 'required|min_length[20]|max_length[99999]');
 
 		if($this->form_validation->run() == FALSE){ // validation not passed; either showing form for the first time, or showing validation errors
 			// load existing data
 			$data['results'] = $this->crud_model->read_article_detail($id);
+			$error = array(
+				'error' => $this->upload->display_errors()
+			);
 
 			$this->load->view('includes/header');
 			$this->load->view('article_edit_view', $data);
@@ -119,6 +122,7 @@ class Article extends CI_Controller {
 	public function delete($id)
 	{
 		$data['results'] = $this->crud_model->delete_article($id);
+		$this->session->set_flashdata('message', 'Article Deleted Successfully');
 		redirect("/article/read", "location");
 }
 
